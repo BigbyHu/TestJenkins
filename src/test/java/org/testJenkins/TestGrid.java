@@ -55,7 +55,7 @@ public class TestGrid {
 			//driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
 			driver.navigate().to(URL);
-			driver.manage().window().setSize(new Dimension(1600, 765)); 
+			driver.manage().window().setSize(new Dimension(800, 500)); 
 			//driver.manage().window().maximize();
 		}else {
 			throw new IllegalArgumentException("The Browser Type is Undefined");
