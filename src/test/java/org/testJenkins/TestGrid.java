@@ -45,7 +45,7 @@ public class TestGrid {
 			cap.setBrowserName("firefox");
 			
 			try {
-			Thread.currentThread().sleep(10000);
+			Thread.currentThread().sleep(3000000);
 		} catch (InterruptedException e1) {
 			// TODO Auto-generated catch block
 			e1.printStackTrace();
@@ -61,7 +61,7 @@ public class TestGrid {
 			cap.setBrowserName("chrome");
 			
 			try {
-			Thread.currentThread().sleep(10000);
+			Thread.currentThread().sleep(3000000);
 		} catch (InterruptedException e1) {
 			// TODO Auto-generated catch block
 			e1.printStackTrace();
