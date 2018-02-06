@@ -43,6 +43,14 @@ public class TestGrid {
 			System.out.println(" Executing on FireFox");
 			DesiredCapabilities cap = DesiredCapabilities.firefox();
 			cap.setBrowserName("firefox");
+			
+			try {
+			Thread.currentThread().sleep(10000);
+		} catch (InterruptedException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
+			
 			driver = new RemoteWebDriver(new URL(Node), cap);
 			driver.navigate().to(URL);
 			//driver.manage().window().setSize(new Dimension(1360, 1020)); 
@@ -51,6 +59,14 @@ public class TestGrid {
 			System.out.println(" Executing on CHROME");
 			DesiredCapabilities cap = DesiredCapabilities.chrome();
 			cap.setBrowserName("chrome");
+			
+			try {
+			Thread.currentThread().sleep(10000);
+		} catch (InterruptedException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
+			
 			driver = new RemoteWebDriver(new URL(Node), cap);
 			//driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
